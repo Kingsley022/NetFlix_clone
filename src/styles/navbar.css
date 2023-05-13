@@ -1,0 +1,36 @@
+.navBar{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.navBar .logo{
+    width: 95px;
+    cursor: pointer;
+}
+.navBar .links{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.navBar .links .link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #d4d0d0;
+}
+.navBar .links .link:hover{
+    color: #fff;
+}
+.navBar .avatar{
+    width: 35px;
+    cursor: pointer;
+}
+.scrollActive{
+    background: #111;
+}

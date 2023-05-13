@@ -1,0 +1,197 @@
+.loginContainer{
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.loginContainer .nav{
+    height: 12%;
+    background: #1b1a1a1a;
+    background: linear-gradient(to bottom, #000000, #1b1a1a1a);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+@media (max-width:769px){
+    .loginContainer .nav{
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .loginContainer .nav img{
+        width: 65px;
+    }
+}
+.loginContainer .nav button{
+    display: block;
+    background: Red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: .3rem 1rem;
+    cursor: pointer;
+}
+
+/* Sign In */
+.signIn{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    top: 38%;
+    left: 28%;
+    margin: 0 auto;
+}
+.signIn p{
+    padding: 3px 0;
+}
+
+.signIn input{
+    padding: .3rem .5rem;
+    width: 50%;
+    margin-right: .5rem;
+    margin-top: 1.5rem;
+    background: rgba(0, 0, 0, .5);
+    border: 1px solid #fff;
+    color: #b8b7b7;
+}
+.signIn button{
+    display: inline-flex;
+    gap: .5rem;
+    background: red;
+    border: none;
+    padding: .4rem .7rem;
+    color: #e1dede;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.signIn button span{
+    transform: scale(1, 1.5);
+}
+
+
+.loginContainer .bottom{
+    position: absolute;
+    height: 12%;
+    width: 100%;
+    background: linear-gradient(to top, #000000, #1b1a1a1a);
+    bottom: 0;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* ***** Sign up begins ***** */
+
+.signUp{
+    background: rgba(0, 0, 0, .5);
+    width: 32%;
+    margin: 5% auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.signUp h2{
+    text-align: left;
+}
+.signUp input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 1rem;
+}
+.signUp button{
+    margin-top: 1rem;
+    padding: 12px;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+.signUp p{
+    margin-top: .5rem;
+    text-align: left;
+    color: grey;
+}
+.signUp p span{
+    color: #fff;
+    cursor: pointer;
+}
+
+.signUp .googleBtn{
+    margin-top: .5rem;
+    padding: 5px 8px;
+    display: inline-flex;
+    justify-content: space-between;
+    background: #f4f3f3;
+    align-items: center;
+    color: #494444;
+    font-weight: bold;
+}
+.signUp .googleBtn img{
+    width: 25px;
+}
+
+.skip{
+    color: rgb(222, 216, 216);
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.error{
+    color: rgb(240, 121, 121);
+    font-size: 14px;
+}
+
+
+@media (max-width: 912px){
+    .signIn{
+        top: 38%;
+        padding: 0 2rem;
+        text-align: center;
+        left: 6rem;
+    }
+    
+    .signUp{
+        width: 80%;
+        margin: 25% auto;
+    }
+    
+    .signUp p{
+        padding: 5px;
+    }
+    .signUp button{
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 481px){
+    .signIn{
+        top: 32%;
+        left: 0;
+        padding: 0 2rem;
+    }
+    .signIn h1{
+        font-size: 21px;
+    }
+    .signIn p{
+        font-size: 14px;
+    }
+
+    .signUp{
+        width: 80%;
+        margin: 35% auto;
+    }
+    .signUp input{
+        padding: 8px;
+    }
+    .signUp p{
+        font-size: 14px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,53 @@
+.banner{
+    position: relative;
+    height: 558px;
+    width: 100%;
+    color: #fff;
+}
+.banner .txtArea{
+    position: absolute;
+    margin-top: 15%;
+    width: 50%;
+    padding: var(--padding);
+}
+.banner .txtArea h1{
+    font-size: 55px;
+}
+.banner .fadedbottom{
+    background: linear-gradient( 180deg, transparent, rgba(22, 22, 22, 0.61) , #111);
+    position: absolute;
+    width: 100%;
+    height: 7rem;
+    bottom: 0;
+}
+.banner .txtArea .btns{
+    display: flex;
+    gap: .8rem;
+    margin-top: 1rem;
+}
+.banner .txtArea .btnStyle{
+    color: #dfdcdc;
+    background: grey;
+    font-weight: normal;
+}
+.banner .txtArea .btnStyle:hover{
+    background: #6c6b6b;
+}
+
+@media (max-width: 481px){
+    .banner .txtArea{
+        margin-top: 35%;
+        width: 60%;
+    }
+    .banner .txtArea h1{
+        font-size: 35px;
+    }
+    .banner .txtArea p{
+        font-size: 14px;
+    }
+    .banner .txtArea .btnStyle{
+        display: inline-flex;
+        color: #dfdcdc;
+        font-weight: normal;
+    }
+}

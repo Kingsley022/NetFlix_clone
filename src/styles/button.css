@@ -1,0 +1,22 @@
+.btn{
+    display: inline-flex;
+    gap: .5rem;
+    padding: 4px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background: rgb(202, 200, 200)
+}
+.btn:hover{
+    background: #fff;
+}
+
+@media (max-width: 481px){
+    .btn{
+        font-size: 14px;
+        padding: 4px 22px;
+    }
+}

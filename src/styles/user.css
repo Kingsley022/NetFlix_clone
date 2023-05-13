@@ -1,0 +1,38 @@
+.acctContainer{
+    position: relative;
+    height: 100vh;
+    color: #ffff;
+    text-align: center;
+    align-items: center;
+}
+.acctContainer .acct{
+    margin: 20% auto;
+    left: 28%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+
+.acct button{
+    color: #fff;
+    background: red;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+@media (max-width: 912px) {
+    .acctContainer .acct{
+        margin: 45% auto;
+    }
+}
+
+@media (max-width: 419px) {
+    .acctContainer .acct{
+        margin: 75% auto;
+        left: 14%;
+        font-size: 14px;
+    }
+}

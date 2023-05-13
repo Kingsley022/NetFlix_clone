@@ -1,0 +1,18 @@
+:root{
+  --padding: 8px 2%;
+  --background: #111;
+  --light-background: #2f2f2f;
+  --white: #fff;
+  --light-color: #767373;
+  --box-shadow: -2px 4px 4px 2px #7d76767d;
+}
+*{
+  padding: 0;
+  margin: 0;
+  transition: all .3s linear;
+  font-family: sans-serif;
+};
+
+.invalidPage{
+  color: #fff;
+}

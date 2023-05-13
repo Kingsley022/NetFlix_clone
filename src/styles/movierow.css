@@ -1,0 +1,67 @@
+.movieRow{
+    position: relative;
+    margin-left: 2rem;
+}
+.movieRow h2{
+    color: #fff;
+    margin: 1rem 0;
+}
+.movieRow .rows{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.movieRow .rows::-webkit-scrollbar{
+    background: transparent;
+}
+
+.movieRow .rows .img{
+    object-fit: cover;
+    object-position: center;
+    max-height: 130px;
+    cursor: pointer;
+    padding: 8px;
+
+}
+.movieRow .rows .img:hover{
+    transform: scale(1.09);
+}
+.movieRow .rows .imgLargeRow{
+    max-height: 280px;
+    width: 100%;
+}
+
+.trailerWrapper {
+position: relative;
+width: 100%;
+height: 0;
+padding-bottom: 56.25%;
+}
+
+.trailerWrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.closeTrailer{
+    font-size: 25px;
+    font-weight: bold;
+    background: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    right: 4rem;
+    padding: 12px;
+}
+
+
