@@ -5,7 +5,6 @@ import Button from "./button";
 import YouTube from 'react-youtube';
 import movieTrailer from 'movie-trailer';
 import { useState } from "react";
-import { toast } from 'react-toastify';
 
 
 

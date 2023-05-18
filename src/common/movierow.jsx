@@ -56,6 +56,7 @@ const MovieRow = ({category, rowTitle, isLargeRow}) => {
                         className={`img ${isLargeRow && 'imgLargeRow'}`}
                         key={movie.id}
                         onClick={()=> handleTrailer(movie)}
+                        alt=""
                     />
                 ))}
             </div>

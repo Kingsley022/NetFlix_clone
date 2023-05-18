@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom';
 import '../../styles/login.css';
 import banner from '../../utils/loginBanner.jpg';
 import logo from '../../utils/logo3.png';
@@ -13,7 +12,6 @@ import { useState } from 'react';
 const Register = () => {
     const bannerImg = `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${banner})`;
     const [isLoginPage, setIsLoginPage] = useState(true);
-    const navigateTo = useNavigate();
 
 
     const handleRedirect = () =>{
@@ -23,7 +21,7 @@ const Register = () => {
     return (
         <div className="loginContainer" style={{backgroundImage: bannerImg}}>
             <div className="nav">
-                <img src={logo}/>
+                <img src={logo} alt=''/>
                 {isLoginPage && <button onClick={handleRedirect}>Sign up</button>}
             </div>
             {isLoginPage ? <SignIn/> :  <SignUp handleClick ={handleRedirect}/>}

@@ -27,11 +27,11 @@ const NavBar = () => {
 
     return (
         <div className={`navBar ${isNavScroll && 'scrollActive'}`}>
-            <img src="../images/logo2.png" onClick={() =>navigateTo('/home')} className='logo'/>
+            <img src="../images/logo2.png" onClick={() =>navigateTo('/home')} className='logo' alt=''/>
 
             <div className="links">
                 <Link to='/movies' className='link'>Movies</Link>
-                <img src="../images/Netflix-avatar.png" className='avatar' onClick={() => navigateTo('/user')}/>
+                <img src="../images/Netflix-avatar.png" className='avatar' onClick={() => navigateTo('/user')} alt=''/>
             </div>
             
         </div>

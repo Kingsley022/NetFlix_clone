@@ -1,4 +1,4 @@
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useContext, useState } from "react"
 import { getAuth, fetchSignInMethodsForEmail } from "firebase/auth";
 import { AppContext } from "../../App";

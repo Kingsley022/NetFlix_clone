@@ -8,7 +8,7 @@ import NavBar from '../common/navBar';
 const Movies = () => {
     const [allMovies, setAllMovies] = useState([])
     
-    const { data:movies, status, refetch } = useQuery(['movies'], async ()=>{
+    const { data:movies} = useQuery(['movies'], async ()=>{
         const res = await Axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=eeb39aadae951e239caedd1d5494e13c`);
         return res.data.results;
      });
@@ -67,15 +67,12 @@ const Movies = () => {
                     {allMovies?.map(movie => (
                         <div className="movieCard" key={movie.id}>
                             <div className="imgContainer">
-                                <img src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`}/>
+                                <img src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`} alt=""/>
                             </div>
 
                             <div className="txtArea">
                                 <p className='rating'>{movie?.vote_average}<i className='fa fa-star'></i></p>
                                 <h5>{movie?.title}</h5>
-                                {/* <h3>
-                                    {filters[0].genres.find(g => g.genre_id === movie?.genre_ids[0]).name}
-                                </h3> */}
                                 <p className='date'>{movie?.release_date}</p>
                             </div>
                         </div>
