@@ -31,7 +31,7 @@ const SignUp = ({handleClick}) => {
             <input type="text" placeholder="Enter Email" value={email} onChange={(e) => setEmail(e.target.value)}/><br/>
             <input type='password' placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/><br/>
             <button type="submit" onClick={handleSignUp}>Sign In</button>
-            <button className="googleBtn" onClick={handleGoogleSignIn}><img src={googleIcon}/> <span>Sign In with Google</span></button>
+            <button className="googleBtn" onClick={handleGoogleSignIn}><img src={googleIcon} alt=''/> <span>Sign In with Google</span></button>
 
             <p>Already have an account? <span onClick={handleClick}>Sign In</span></p>
         </div>
