@@ -1,6 +1,6 @@
 import { useState } from "react";
 import googleIcon from '../../utils/google.png';
-import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithPopup} from "firebase/auth";
 import { auth, googleProvider } from "../../config/firebase";
 const SignUp = ({handleClick}) => {
     const[email, setEmail] = useState('');
@@ -22,14 +22,6 @@ const SignUp = ({handleClick}) => {
             console.log(err);
         }
     }
-
-    // const handleSignOut = async () =>{
-    //     try {
-    //         await signOut( auth);
-    //     }catch(err) {
-    //         console.log(err);
-    //     }
-    // }
 
 
 
