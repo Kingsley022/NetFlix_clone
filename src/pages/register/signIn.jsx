@@ -13,7 +13,7 @@ const SignIn = () => {
     const[isEmailValid, setIsEmailValid] = useState(false);
     const[isInvalidEmail, setIsInvalidEmail] = useState(false);
     const[errMsg, setErrMsg] = useState('');
-    const{setUser, isLoggedIn, setIsLoggedIn} = useContext(AppContext)
+    const{setUser, setIsLoggedIn} = useContext(AppContext)
     
 
 
@@ -31,7 +31,7 @@ const SignIn = () => {
         fetchSignInMethodsForEmail(auth, email)
             .then( signInMethods => {
                 if (signInMethods.length > 0) {
-                    setIsEmailValid(true);
+                    setIsEmailValid(!isEmailValid);
                     setUser(email);
                     setIsLoggedIn(true);
                     navigateTo('/home');

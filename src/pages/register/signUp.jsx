@@ -23,13 +23,13 @@ const SignUp = ({handleClick}) => {
         }
     }
 
-    const handleSignOut = async () =>{
-        try {
-            await signOut( auth);
-        }catch(err) {
-            console.log(err);
-        }
-    }
+    // const handleSignOut = async () =>{
+    //     try {
+    //         await signOut( auth);
+    //     }catch(err) {
+    //         console.log(err);
+    //     }
+    // }
 
 
 
