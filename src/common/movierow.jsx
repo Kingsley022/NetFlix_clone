@@ -49,18 +49,16 @@ const MovieRow = ({category, rowTitle, isLargeRow}) => {
     
     return (
         <div className= 'movieRow'>
-            <h2>{rowTitle}</h2>
+            <h2>{rowTitle || "Title"}</h2>
             <div className= 'rows'>
-                <>
-                    {movies?.map( movie => (
-                        <img src={`https://image.tmdb.org/t/p/w500/${isLargeRow ? movie?.poster_path : movie?.backdrop_path}`} 
-                            className={`img ${isLargeRow && 'imgLargeRow'}`}
-                            key={movie.id}
-                            onClick={()=> handleTrailer(movie)}
-                            alt=""
-                        />
-                    ))}
-                </>
+                {movies?.map( movie => (
+                    <img src={`https://image.tmdb.org/t/p/w500/${isLargeRow ? movie?.poster_path : movie?.backdrop_path}`} 
+                        className={`img ${isLargeRow && 'imgLargeRow'}`}
+                        key={movie.id}
+                        onClick={()=> handleTrailer(movie)}
+                        alt=""
+                    />
+                ))}
             </div>
             {trailerUrl && <div className="trailerWrapper">
                 <button onClick={closeTrailer} className="closeTrailer">X</button>
