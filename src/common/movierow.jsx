@@ -49,7 +49,7 @@ const MovieRow = ({category, rowTitle, isLargeRow}) => {
     
     return (
         <div className= 'movieRow'>
-            <h2>{rowTitle || "Title"}</h2>
+            <h2>{rowTitle | "Title"}</h2>
             <div className= 'rows'>
                 {movies?.map( movie => (
                     <img src={`https://image.tmdb.org/t/p/w500/${isLargeRow ? movie?.poster_path : movie?.backdrop_path}`} 
